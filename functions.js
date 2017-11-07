@@ -1,5 +1,5 @@
 var pic = new Raster('allen.jpg');
-var count = 2;
+var count = 4;
 
 var allen= new Symbol(pic);
 
@@ -200,7 +200,7 @@ for (var i = 0; i < numBalls; i++) {
 }
 
 function onFrame(event) {
-  for (var i = 0; i < 12; i++) {
+  for (var i = 0; i < 23; i++) {
   		var item = project.activeLayer.children[i];
 
   		// Move the item 1/20th of its width to the right. This way
