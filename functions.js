@@ -90,7 +90,7 @@ function Ball(r, p, v) {
 		fillColor: {
 			hue: Math.random() * 360,
 			saturation: 1,
-			brightness: 1
+			brightness: 0
 		},
 		blendMode: 'lighter'
 	});
