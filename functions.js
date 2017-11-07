@@ -200,7 +200,7 @@ for (var i = 0; i < numBalls; i++) {
 }
 
 function onFrame(event) {
-  for (var i = 0; i < 23; i++) {
+  for (var i = 0; i < 24; i++) {
   		var item = project.activeLayer.children[i];
 
   		// Move the item 1/20th of its width to the right. This way
