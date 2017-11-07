@@ -1,5 +1,5 @@
 var pic = new Raster('allen.jpg');
-var count = 4;
+var count = 2;
 
 var allen= new Symbol(pic);
 
@@ -12,10 +12,9 @@ for (var i = 0; i < count; i++) {
 	placedSymbol1.scale(i / temp);
 }
 
-var pic2 = new Raster('koala.jpg');
-var count = 4;
+var picc = new Raster('koala.jpg');
 
-var koala = new Symbol(pic2);
+var koala = new Symbol(picc);
 
 // Place the instances of the symbol:
 for (var i = 0; i < count; i++) {
@@ -23,6 +22,58 @@ for (var i = 0; i < count; i++) {
   var temp = count*3;
 	var center = Point.random() * view.size;
 	var placedSymbol1 = koala.place(center);
+	placedSymbol1.scale(i / temp);
+}
+
+var pic2 = new Raster('allen2.jpg');
+
+var allen2 = new Symbol(pic2);
+
+// Place the instances of the symbol:
+for (var i = 0; i < count; i++) {
+	// The center position is a random point in the view:
+  var temp = count*3;
+	var center = Point.random() * view.size;
+	var placedSymbol1 = allen2.place(center);
+	placedSymbol1.scale(i / temp);
+}
+
+var pic3 = new Raster('allen3.jpg');
+
+var allen3 = new Symbol(pic3);
+
+// Place the instances of the symbol:
+for (var i = 0; i < count; i++) {
+	// The center position is a random point in the view:
+  var temp = count*3;
+	var center = Point.random() * view.size;
+	var placedSymbol1 = allen3.place(center);
+	placedSymbol1.scale(i / temp);
+}
+
+var pic4 = new Raster('allen4.jpg');
+
+var allen4 = new Symbol(pic4);
+
+// Place the instances of the symbol:
+for (var i = 0; i < count; i++) {
+	// The center position is a random point in the view:
+  var temp = count*3;
+	var center = Point.random() * view.size;
+	var placedSymbol1 = allen4.place(center);
+	placedSymbol1.scale(i / temp);
+}
+
+var pic5 = new Raster('allen5.jpg');
+
+var allen5 = new Symbol(pic5);
+
+// Place the instances of the symbol:
+for (var i = 0; i < count; i++) {
+	// The center position is a random point in the view:
+  var temp = count*3;
+	var center = Point.random() * view.size;
+	var placedSymbol1 = allen5.place(center);
 	placedSymbol1.scale(i / temp);
 }
 
@@ -149,7 +200,7 @@ for (var i = 0; i < numBalls; i++) {
 }
 
 function onFrame(event) {
-  for (var i = 0; i < count+4; i++) {
+  for (var i = 0; i < 12; i++) {
   		var item = project.activeLayer.children[i];
 
   		// Move the item 1/20th of its width to the right. This way
