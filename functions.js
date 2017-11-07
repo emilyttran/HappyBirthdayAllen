@@ -1,7 +1,7 @@
 // Based on 'JPEG Raster' by Jonathan Puckey:
 
 // Create a raster item:
-var raster = new Raster('allen.jpg');
+var raster = new Raster('allen.jpg',view.center);
 var loaded = false;
 
 raster.on('load', function() {
